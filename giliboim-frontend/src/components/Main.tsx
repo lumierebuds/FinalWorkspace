@@ -1,12 +1,10 @@
 import React from 'react';
 import KakaoMap from './KakaoMap';
-import '../styles/common/Main.css';
-import { useNavigate } from 'react-router-dom';
+import '../styles/common/Main.css'
+
 
 const Main: React.FC = () => {
 
-  // 검색 페이지 이동용 함수 
-  const navi = useNavigate(); 
 
   return (
     <div className="main">
@@ -17,7 +15,7 @@ const Main: React.FC = () => {
       </div>
 
       {/* 안심경로 검색 버튼 */}
-      <div className="safe-path-container" onClick={()=>{ navi("/route")}}>
+      <div className="safe-path-container">
         <button className="safe-path-button">안심경로 검색버튼</button>
       </div>
 

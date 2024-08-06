@@ -5,16 +5,15 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
 import RouteSearch from "./pages/RouteSearch";
+import Friend from './components/friend';
 
 const App: React.FC = () => {
   return (
     <div className="app">
       <Header />
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/route" element={<RouteSearch />} />
-      </Routes>
-      <Footer />
+        {/* <Main /> */}
+        <Friend/>
+      <Footer/>
     </div>
   );
 };
