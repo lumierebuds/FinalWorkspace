@@ -8,8 +8,6 @@ const Footer = () => {
         navigate(path);
     };
 
-
-
     return (
         <div className="footer">
             <button style={{ width: '20%', height: '100%' }}>

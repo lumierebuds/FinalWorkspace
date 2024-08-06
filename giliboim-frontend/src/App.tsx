@@ -1,25 +1,36 @@
-import React from 'react';
+
+import React from "react";
+import Main from "./components/Main";
+import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Main from './components/Main';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import RouteSearch from "./pages/RouteSearch";
+import Friend from './components/friend';
 import Settings from './components/Settings';
-import './App.css';
+        
+import LoginPage from './components/LoginPage';
+import TermsOfUse from './components/TermsOfUse';
+import InsertMember from './components/InsertMember';
+        
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <div className="app">
-        <Header />
-        <div className="content">
-          <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/settings" element={<Settings />} />
-          </Routes>
-        </div>
-        <Footer />
-      </div>
-    </Router>
+    <div className="app">
+      {//로그인했을때
+      // <Header />
+      // <Main />
+      // <Friend/>
+      // <Settings />
+      // <Footer/>
+      }
+      {
+        <LoginPage/>
+        //<TermsOfUse/>
+        //<InsertMember/>
+      }
+    </div>
   );
 };
 

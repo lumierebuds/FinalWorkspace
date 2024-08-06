@@ -43,7 +43,11 @@ const KakaoMap: React.FC = () => {
     };
   }, []);
 
-  return <div id="map" style={{ width: '100%', height: '100%' }} />;
+  return (
+    
+    <div id="map" style={{ width: '100%', height: '100%' }} />
+
+  );
 };
 
 export default KakaoMap;
