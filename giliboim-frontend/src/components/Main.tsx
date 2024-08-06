@@ -1,6 +1,6 @@
 import React from 'react';
 import KakaoMap from './KakaoMap';
-import './Main.css';
+import '../styles/common/Main.css'
 
 const Main: React.FC = () => {
   return (
