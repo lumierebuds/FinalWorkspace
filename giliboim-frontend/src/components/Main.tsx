@@ -1,10 +1,14 @@
 import React from 'react';
 import KakaoMap from './KakaoMap';
-import './Main.css';
+import '../styles/common/Main.css';
+import { useNavigate } from 'react-router-dom';
 
 const Main: React.FC = () => {
-  return (
 
+  // 검색 페이지 이동용 함수 
+  const navi = useNavigate(); 
+
+  return (
     <div className="main">
       {/* 지도 API를 배경으로 설정 */}
 
@@ -13,7 +17,7 @@ const Main: React.FC = () => {
       </div>
 
       {/* 안심경로 검색 버튼 */}
-      <div className="safe-path-container">
+      <div className="safe-path-container" onClick={()=>{ navi("/route")}}>
         <button className="safe-path-button">안심경로 검색버튼</button>
       </div>
 
