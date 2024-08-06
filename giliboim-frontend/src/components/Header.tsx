@@ -1,4 +1,6 @@
-import '../styles/common/Header.css'
+import React from 'react';
+import '../styles/common/Header.css';
+
 
 function Header() {
   return (
