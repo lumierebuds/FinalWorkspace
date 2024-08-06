@@ -1,0 +1,120 @@
+.friend-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    /* 버튼을 절대 위치로 배치하기 위해 설정 */
+
+}
+
+.friend-header-title {
+    font-size: 24px;
+    /* 글씨 크기 */
+    font-weight: bold;
+    text-align: center;
+    /* 텍스트를 가운데 정렬 */
+
+}
+
+.friend-container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 220px);
+    /* Header와 Footer를 제외한 높이 */
+
+    border-top: 1px solid #ddd;
+
+
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: px;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 7px;
+    margin-top: 10px;
+}
+
+.profile-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 7px;
+    margin-top: 20px;
+}
+
+.friend-list {
+    border-top: 1px solid #ddd;
+    margin-top: -5px; /* 선을 위로 10px 이동 */
+}
+
+.friend-header {
+    margin-top: 25px;
+    /* 선과 텍스트 사이에 여백 추가 */
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-left: 7px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.friend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.friend-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.friend-name {
+    flex: 1;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.delete-button {
+    background-color: #008fbf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.delete-button:hover {
+    background-color: #008fbf;
+}
+
+.add-friend-button {
+    position: absolute;
+    right: 20px;
+    background-color: transparent; 
+    cursor: pointer;
+    border: none; 
+    color: #26b2dd; 
+    font-size: 16px; 
+    padding: 0; 
+    margin-top : 10px;
+   
+}
