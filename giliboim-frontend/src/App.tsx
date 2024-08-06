@@ -13,6 +13,7 @@ import Settings from './components/Settings';
 import LoginPage from './components/LoginPage';
 import TermsOfUse from './components/TermsOfUse';
 import InsertMember from './components/InsertMember';
+import Community from "./components/Community";
         
 
 const App: React.FC = () => {
@@ -23,6 +24,7 @@ const App: React.FC = () => {
       // <Main />
       // <Friend/>
       // <Settings />
+      // <Community/>
       // <Footer/>
       }
       {
