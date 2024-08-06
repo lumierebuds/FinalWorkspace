@@ -1,6 +1,10 @@
-import './Footer.css';
+import { useNavigate } from 'react-router-dom';
+import '../styles/common/Footer.css'
 
 const Footer = () => {
+    
+
+
     return (
         <div className="footer">
             <button style={{ width: '20%', height: '100%' }}>
