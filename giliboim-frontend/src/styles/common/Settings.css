@@ -1,0 +1,79 @@
+/* 기존 CSS 수정 및 추가 */
+
+/* 전체 레이아웃을 관리하는 container를 추가 */
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* content 영역의 flex-grow를 설정해 푸터가 항상 하단에 고정되도록 */
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  /* footer를 항상 하단에 고정 */
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e3f2fd;
+    padding: 10px 0;
+    position: sticky; /* sticky 또는 fixed를 사용해 고정 */
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* 데스크탑에서 푸터가 가운데 정렬되도록 */
+  @media (min-width: 1024px) {
+    .footer {
+      max-width: 768px; /* 최대 너비 설정 */
+      margin: 0 auto;   /* 가운데 정렬 */
+    }
+  }
+  
+  .setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .setting-item:last-child {
+    border-bottom: none;
+  }
+  
+  .setting-item input[type="checkbox"] {
+    width: 40px;
+    height: 20px;
+    position: relative;
+    appearance: none;
+    background: #ccc;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .setting-item input[type="checkbox"]:checked {
+    background: #4caf50;
+  }
+  
+  .setting-item input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    transition: transform 0.3s;
+  }
+  
+  .setting-item input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+  }
+  
