@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import RouteSearch from "./pages/RouteSearch";
 import Friend from './components/friend';
@@ -12,6 +13,8 @@ import Settings from './components/Settings';
 import LoginPage from './components/LoginPage';
 import TermsOfUse from './components/TermsOfUse';
 import InsertMember from './components/InsertMember';
+import Withdraw from "./components/Withdraw";
+import Information from "./components/Information";
 import Community from "./pages/community/Community";
 import LocationPicker from "./pages/community/LocationPicker";
 import ReportForm from "./pages/community/ReportEditForm";
@@ -32,6 +35,7 @@ const App: React.FC = () => {
           // <Friend/>
           // <Settings />
           // <Community/>
+          // <Information/>
           // <Footer/>
           //<LoginPage/>
         }
