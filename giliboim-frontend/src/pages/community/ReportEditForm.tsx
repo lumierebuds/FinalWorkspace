@@ -34,7 +34,7 @@ const ReportForm: React.FC = () => {
         <div className="photo-upload-section">
           <label className="photo-upload">
             <input 
-              type="file" 
+               type="file" 
               accept="image/*" 
               multiple 
               onChange={handleFileChange} 
