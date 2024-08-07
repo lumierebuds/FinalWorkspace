@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Header from './Header';
-import Footer from './Footer';
-import KakaoMap from './KakaoMap'; // KakaoMap 컴포넌트를 사용
-import './LocationPicker.css';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import KakaoMap from '../../components/KakaoMap'; // KakaoMap 컴포넌트를 사용
+import '../../styles/community/LocationPicker.css';
 
 const LocationPicker: React.FC = () => {
   const [selectedAddress, setSelectedAddress] = useState('');
@@ -48,13 +48,14 @@ const LocationPicker: React.FC = () => {
           onChange={(e) => setSelectedAddress(e.target.value)}
         />
         <button onClick={() => handleSearch(selectedAddress)}>🔍</button>
+        <button className="confirm-button" onClick={handleConfirm}>확인</button>
       </div>
 
-      <div className="map-container">
+      <div className="map-container">   
         <KakaoMap />
       </div>
 
-      <button className="confirm-button" onClick={handleConfirm}>확인</button>
+    
     </div>
   );
 };

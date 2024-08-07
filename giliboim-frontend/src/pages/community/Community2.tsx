@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/community/Community2.css'; // CSS 파일을 분리하여 스타일을 적용합니다.
-import KakaoMap from './KakaoMap';
+import KakaoMap from '../../components/KakaoMap';
 
 const Community2: React.FC = () => {
   const [likeCount, setLikeCount] = useState(0);

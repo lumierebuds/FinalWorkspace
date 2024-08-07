@@ -2,7 +2,7 @@
 .community {
     display: flex;
     flex-direction: column;
-    min-height: calc(100vh - 195px); /* Header와 Footer를 제외한 높이 */
+    min-height: calc(100vh - 194px); /* Header와 Footer를 제외한 높이 */
     padding: 20px;
   }
   
