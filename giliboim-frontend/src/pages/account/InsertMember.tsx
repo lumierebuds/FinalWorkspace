@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../styles/common/InsertMember.css';
-import logo from '../assets/images/giliboim-logo.png';
+import '../../styles/common/InsertMember.css';
+import logo from '../../assets/images/giliboim-logo.png';
 
 const InsertMember: React.FC = () => {
 
