@@ -4,7 +4,7 @@ import '../styles/common/Header.css';
 function Header() {
   return (
     <header>
-
+      
     </header>
   );
 }
