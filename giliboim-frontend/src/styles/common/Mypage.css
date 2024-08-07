@@ -1,0 +1,78 @@
+/* 전체 페이지 스타일 */
+.my-page {
+    max-width: 1000px; /* 데스크탑에서는 더 넓게 */
+    margin: 0 auto;
+    padding: 16px;
+    box-sizing: border-box;
+    overflow-y: auto; /* 스크롤이 필요한 경우를 대비한 설정 */
+    height: calc(100vh - 154px);
+
+  }
+  
+  /* 사용자 정보 섹션 */
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  
+  /* 친구 리스트 스타일 */
+  .friend-list {
+    margin-top: 16px;
+  }
+  
+  .friend-list p {
+    margin-bottom: 8px;
+  }
+  
+  .friend-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .friend-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .friend-item span {
+    flex: 1;
+    margin-left: 12px;
+  }
+  
+  .delete-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+  
+  /* 데스크탑 스타일 */
+  @media (min-width: 769px) {
+    .my-page {
+      max-width: 1000px; /* 데스크탑에서는 더 넓게 */
+      
+    }
+  
+    .friend-item img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .delete-button {
+      padding: 6px 12px;
+    }
+  }
+  

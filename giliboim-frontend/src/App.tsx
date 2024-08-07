@@ -14,25 +14,24 @@ import LoginPage from './components/LoginPage';
 import TermsOfUse from './components/TermsOfUse';
 import InsertMember from './components/InsertMember';
 import Community from "./components/Community";
-        
+import Mypage from "./components/Mypage";
+import InquiryList from "./components/InquiryList";
+
 
 const App: React.FC = () => {
   return (
-    <div className="app">
-      {//로그인했을때
-      // <Header />
-      // <Main />
-      // <Friend/>
-      // <Settings />
-      // <Community/>
-      // <Footer/>
-      }
-      {
-        <LoginPage/>
-        //<TermsOfUse/>
-        //<InsertMember/>
-      }
-    </div>
+      <div className="App">
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/Main" element={<Main />} />
+          <Route path="/InquiryList" element={<InquiryList />} />
+          {/* <Route path="/Dangers" element={<Dangers />} /> */}
+          <Route path="/Mypage" element={<Mypage />} />
+          <Route path="/settings" element={<Settings />} />
+        </Routes>
+        <Footer />
+      </div>
   );
 };
 

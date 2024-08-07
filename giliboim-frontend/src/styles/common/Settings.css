@@ -4,7 +4,6 @@
 .app {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
   }
   
   /* content 영역의 flex-grow를 설정해 푸터가 항상 하단에 고정되도록 */
