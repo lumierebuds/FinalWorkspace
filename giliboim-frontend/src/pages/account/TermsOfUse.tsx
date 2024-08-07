@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../styles/common/TermsOfUse.css';
-import logo from '../assets/images/giliboim-logo.png';
+import '../../styles/common/TermsOfUse.css';
+import logo from '../../assets/images/giliboim-logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const TermsOfUse: React.FC = () => {

@@ -1,5 +1,5 @@
-import '../styles/common/LoginPage.css';
-import logo from '../assets/images/giliboim-logo.png';
+import '../../styles/common/LoginPage.css';
+import logo from '../../assets/images/giliboim-logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const LoginPage = () => {
