@@ -22,6 +22,7 @@ import CustomComplaintPage from "./pages/community/CustomComplaintPage";
 import AskPage from "./pages/community/AskPage";
 import Mypage from "./components/Mypage";
 import InquiryList from "./components/InquiryList";
+import CompleteInsert from "./pages/account/CompleteInsert";
 import ChatList from "./components/ChatList";
 import ChatRoom from "./components/ChatRoom";
 import InquiryDetails from "./components/InquiryDetails";
@@ -41,19 +42,21 @@ const App: React.FC = () => {
           // <Settings />
           // <Community/>
           // <Information/>
-          // <Footer/>
-          // <LoginPage/>
           // <AskPage />
           // <ChatList/>
           // <ChatRoom/>
           // <InquiryDetails/>
+          // <CompleteInsert/>
+          // <Footer/>
         }
         <Header />
         <RouteSelect />
         <Footer />
-        {
-          //<TermsOfUse/>
-          //<InsertMember/>
+        {  
+          // 로그인 안했을때
+          // <LoginPage/>
+          // <TermsOfUse/>
+          // <InsertMember/>
         }
       </div>
       {/* 
