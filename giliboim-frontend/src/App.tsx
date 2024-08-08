@@ -14,21 +14,30 @@ import LoginPage from './components/LoginPage';
 import TermsOfUse from './components/TermsOfUse';
 import InsertMember from './components/InsertMember';
 import Community from "./components/Community";
+
+import AdminPage from "./pages/admin/AdminPage";
+import AdminMember from "./pages/admin/AdminMember";
+import MemberDetail from "./pages/admin/MemberDetail";
         
 
 const App: React.FC = () => {
   return (
     <div className="app">
       {//로그인했을때
-      // <Header />
-      // <Main />
-      // <Friend/>
-      // <Settings />
-      // <Community/>
-      // <Footer/>
+      <>
+      <Header />
+       {/* <Main />
+       <Friend/>
+       <Settings />
+       <Community/> */}
+      {/* <AdminPage/> */}
+      {/* <AdminMember/> */}
+      <MemberDetail/>
+      <Footer/>
+      </>
       }
       {
-        <LoginPage/>
+        // <LoginPage/>
         //<TermsOfUse/>
         //<InsertMember/>
       }
