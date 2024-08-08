@@ -1,0 +1,107 @@
+.admin-member-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 154px); /* 상단과 하단 네비게이션바 제외 */
+    background: #ffffff;
+}
+
+/* .admin-member-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #CAE9FF;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 0%;
+    @media screen and (max-width: 1000px) {
+        color: white;
+        margin-left: 0%;
+      }
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    margin-right: 600px;
+
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+} */
+
+.notification-icon,
+.search-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    
+}
+
+.search-bar input {
+    border: 1px;
+    width: 100px;
+    margin-right: 0px;
+    background-color: transparent;
+    
+}
+
+.member-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.member-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.member-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.member-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.member-phone {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+}

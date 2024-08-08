@@ -1,6 +1,7 @@
-import "../styles/route/route-search.css";
+import "../../styles/route/route-search.css";
+import "../../styles/common/Main.css";
 
-function RouteSearch() {
+const RouteSearch: React.FC = () => {
   return (
     <div className="main">
       <div className="route-container">
@@ -118,6 +119,6 @@ function RouteSearch() {
       </div>
     </div>
   );
-}
+};
 
 export default RouteSearch;
