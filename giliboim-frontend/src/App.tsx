@@ -22,6 +22,10 @@ import CustomComplaintPage from "./pages/community/CustomComplaintPage";
 import AskPage from "./pages/community/AskPage";
 import Mypage from "./components/Mypage";
 import InquiryList from "./components/InquiryList";
+import ChatList from "./components/ChatList";
+import ChatRoom from "./components/ChatRoom";
+import InquiryDetails from "./components/InquiryDetails";
+        
 import RouteMain from "./pages/route/RouteMain";
 import RouteSelect from "./pages/route/RouteSelect";
 
@@ -38,7 +42,11 @@ const App: React.FC = () => {
           // <Community/>
           // <Information/>
           // <Footer/>
-          //<LoginPage/>
+          // <LoginPage/>
+          // <AskPage />
+          // <ChatList/>
+          // <ChatRoom/>
+          // <InquiryDetails/>
         }
         <Header />
         <RouteSelect />
