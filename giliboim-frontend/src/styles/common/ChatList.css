@@ -1,0 +1,81 @@
+.chat-list-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px;
+    box-sizing: border-box;
+    padding-bottom: 104px; /* 푸터와 겹치지 않도록 패딩 추가 */
+    min-height: calc(100vh - 154px);
+
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 16px;
+  }
+  
+  .search-bar input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 1rem;
+    background-color: transparent;
+  }
+  
+  .search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+  
+  .chat-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .chat-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .chat-item:last-child {
+    border-bottom: none;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  
+  .chat-name {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .chat-list-container {
+      padding: 8px;
+    }
+  
+    .avatar {
+      width: 35px;
+      height: 35px;
+      margin-right: 12px;
+    }
+  
+    .chat-name {
+      font-size: 0.9rem;
+    }
+  }
+  

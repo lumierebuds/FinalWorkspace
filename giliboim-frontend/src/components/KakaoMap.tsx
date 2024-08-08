@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 // 데이터 파일 경로 확인
 
 const KakaoMap: React.FC = () => {
@@ -8,7 +8,10 @@ const KakaoMap: React.FC = () => {
 
   const updateMapPosition = (latitude: number, longitude: number) => {
     if (map) {
-      const moveLatLon = new (window as any).kakao.maps.LatLng(latitude, longitude);
+      const moveLatLon = new (window as any).kakao.maps.LatLng(
+        latitude,
+        longitude
+      );
       map.setCenter(moveLatLon);
     }
   };
@@ -29,7 +32,7 @@ const KakaoMap: React.FC = () => {
   };
 
   useEffect(() => {
-    const container = document.getElementById('map');
+    const container = document.getElementById("map");
     const options = {
       center: new (window as any).kakao.maps.LatLng(33.450701, 126.570667),
       level: 3,
@@ -39,15 +42,11 @@ const KakaoMap: React.FC = () => {
     setMap(mapInstance);
 
     return () => {
-      markers.forEach(marker => marker.setMap(null));
+      markers.forEach((marker) => marker.setMap(null));
     };
   }, []);
 
-  return (
-    
-    <div id="map" style={{ width: '100%', height: '100%' }} />
-
-  );
+  return <div id="map" style={{ width: "100%", height: "100%" }} />;
 };
 
 export default KakaoMap;

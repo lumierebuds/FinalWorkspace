@@ -1,15 +1,11 @@
-import React from 'react';
-import KakaoMap from './KakaoMap';
-import '../styles/common/Main.css'
-
+import React from "react";
+import KakaoMap from "./KakaoMap";
+import "../styles/common/Main.css";
 
 const Main: React.FC = () => {
-
-
   return (
     <div className="main">
       {/* 지도 API를 배경으로 설정 */}
-
       <div className="map-container">
         <KakaoMap />
       </div>
