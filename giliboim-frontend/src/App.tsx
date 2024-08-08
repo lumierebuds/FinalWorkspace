@@ -5,13 +5,13 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import RouteSearch from "./pages/RouteSearch";
-import Friend from './components/Friend';
-import Settings from './components/Settings';
-        
-import LoginPage from './pages/account/LoginPage';
-import TermsOfUse from './pages/account/TermsOfUse';
-import InsertMember from './pages/account/InsertMember';
+import RouteSearch from "./pages/route/RouteSearch";
+import Friend from "./components/Friend";
+import Settings from "./components/Settings";
+
+import LoginPage from "./pages/account/LoginPage";
+import TermsOfUse from "./pages/account/TermsOfUse";
+import InsertMember from "./pages/account/InsertMember";
 import Withdraw from "./components/Withdraw";
 import Information from "./components/Information";
 import Community from "./pages/community/Community";
@@ -26,12 +26,15 @@ import ChatList from "./components/ChatList";
 import ChatRoom from "./components/ChatRoom";
 import InquiryDetails from "./components/InquiryDetails";
         
+import RouteMain from "./pages/route/RouteMain";
+import RouteSelect from "./pages/route/RouteSelect";
 
 const App: React.FC = () => {
   return (
     <>
       <div className="app">
-        {//로그인했을때
+        {
+          //로그인했을때
           // <Header title="메인" showBackButton={false} showCloseButton={false} />
           // <Main />
           // <Friend/>
@@ -39,13 +42,14 @@ const App: React.FC = () => {
           // <Community/>
           // <Information/>
           // <Footer/>
-          //<LoginPage/>
-        //<AskPage />
-        //<ChatList/>
-        //<ChatRoom/>
+          // <LoginPage/>
+          // <AskPage />
+          // <ChatList/>
+          // <ChatRoom/>
+          // <InquiryDetails/>
         }
         <Header />
-        <InquiryDetails/>
+        <RouteSelect />
         <Footer />
         {
           //<TermsOfUse/>

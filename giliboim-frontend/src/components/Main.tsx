@@ -6,7 +6,6 @@ const Main: React.FC = () => {
   return (
     <div className="main">
       {/* 지도 API를 배경으로 설정 */}
-
       <div className="map-container">
         <KakaoMap />
       </div>
