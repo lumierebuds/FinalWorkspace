@@ -22,6 +22,7 @@ import CustomComplaintPage from "./pages/community/CustomComplaintPage";
 import AskPage from "./pages/community/AskPage";
 import Mypage from "./components/Mypage";
 import InquiryList from "./components/InquiryList";
+import CompleteInsert from "./pages/account/CompleteInsert";
         
 
 const App: React.FC = () => {
@@ -36,12 +37,13 @@ const App: React.FC = () => {
           // <Community/>
           // <Information/>
           // <Footer/>
-          //<LoginPage/>
+          // <Header />
+          // <AskPage />
+          // <CompleteInsert/>
         }
-        <Header />
-        <AskPage />
-        <Footer />
+        <LoginPage/>
         {
+        // <Footer />
           //<TermsOfUse/>
           //<InsertMember/>
         }
