@@ -1,0 +1,122 @@
+.admin-post-container {
+  position: relative;
+  height: calc(100vh - 176px); /* Header와 Footer의 높이를 제외한 전체 높이 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* 스크롤바를 숨깁니다 */
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vh; /* 화면 가로 길이에 맞게 설정 */
+  height: 50px;
+  background-color: #d1e7fd;
+  position: relative;
+  padding: 0; /* 패딩 값 제거 */
+  margin: 0; /* 여백 값 제거 */
+}
+
+.back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+}
+
+.declaration{
+  width: 25px;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.notification-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-bar input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 150px;
+}
+
+.filter-menu {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.filter-menu div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.filter-menu .active {
+  background-color: #d4e2ff;
+  font-weight: bold;
+}
+
+.post-list {
+  flex-grow: 1;
+  width: 100%;
+  overflow-y: auto;
+  padding: 10px 0;
+}
+
+.post-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.post-icon {
+  width: 50px;
+  text-align: center;
+}
+
+
+.post-content {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 18px;
+}

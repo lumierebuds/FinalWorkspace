@@ -1,6 +1,6 @@
 .Information-info-container {
   padding: 20px;
-  min-height: calc(100vh - 194px);
+  height: calc(100vh - 194px);
 }
 
 .Information-info-header {
@@ -12,10 +12,7 @@
   border-bottom: 1px solid #ccc;
 }
 
-.Information-info-body {
-  padding: 20px;
-  border-radius: 8px;
-}
+
 
 .profile-photo-section {
   display: flex;
@@ -32,6 +29,7 @@
   padding: 15px;
   margin-right: 5px;
   pointer-events: none; /* 클릭 이벤트 비활성화 */
+  margin-left: 11px;
 }
 
 .profile-photo-input {
@@ -46,32 +44,34 @@
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
+  margin-left: 11px;
 }
 
 .input-group input {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  margin-left: 11px;
 }
 
 .button-group {
   display: flex;
   justify-content: center;
-  gap: 5%; /* 버튼 사이 간격을 넓히기 위해 약간 조정 */
-  margin-top: 60px;
+  gap: -50px; /* 버튼 사이 간격을 넓히기 위해 약간 조정 */
+  margin-top: 30px;
 }
 
 .submit-button,
 .cancel-button {
-  width: 40%; /* 버튼의 가로 길이를 40%로 줄임 */
+  width: 30%; /* 버튼의 가로 길이를 40%로 줄임 */
   padding: 10px;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  margin-left: 40px;
-  margin-right: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 
 .submit-button {

@@ -6,6 +6,8 @@ import Footer from "./components/Footer";
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import RouteSearch from "./pages/route/RouteSearch";
+import RouteMain from "./pages/route/RouteMain";
+import RouteSelect from "./pages/route/RouteSelect";
 import Friend from "./components/Friend";
 import Settings from "./components/Settings";
 
@@ -31,12 +33,12 @@ import CompleteInsert from "./pages/account/CompleteInsert";
 import ChatList from "./components/ChatList";
 import ChatRoom from "./components/ChatRoom";
 import InquiryDetails from "./components/InquiryDetails";
+import Check from "./components/Check";
+import AdminComments from "./pages/admin/AdminComments";
+import ReportedComment from "./pages/admin/ReportedComment";
 
-        
-import RouteMain from "./pages/route/RouteMain";
-import RouteSelect from "./pages/route/RouteSelect";
 
-const App: React.FC = () => {
+function App() {
   return (
     <>
       <div className="app">
@@ -55,8 +57,9 @@ const App: React.FC = () => {
           // <CompleteInsert/>
           // <ReportedPost/>
           // <Footer/>
+          //<LoginPage/>
+          //<ReportedComment/>
         }
-
         <Header />
         <RouteSelect />
         <Footer />
@@ -67,22 +70,22 @@ const App: React.FC = () => {
           // <InsertMember/>
         }
       </div>
-      {/* 
-        <div className="App">
-            <Header/>
-            <Routes>
-              <Route path="/" element={<Main />} />
-              <Route path="/Main" element={<Main />} />
-              <Route path="/InquiryList" element={<InquiryList />} />
-              <Route path="/Dangers" element={<Dangers />} /> 
-              <Route path="/Mypage" element={<Mypage />} />
-              <Route path="/settings" element={<Settings />} />
-            </Routes>
-            <Footer />
-        </div>
-      */}
+      {/*
+              <div className="App">
+                  <Header/>
+                  <Routes>
+                    <Route path="/" element={<Main />} />
+                    <Route path="/Main" element={<Main />} />
+                    <Route path="/InquiryList" element={<InquiryList />} />
+                    <Route path="/Dangers" element={<Dangers />} />
+                    <Route path="/Mypage" element={<Mypage />} />
+                    <Route path="/settings" element={<Settings />} />
+                  </Routes>
+                  <Footer />
+              </div>
+            */}
     </>
   );
-};
+}
     
 export default App;

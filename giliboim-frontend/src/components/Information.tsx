@@ -35,7 +35,7 @@ function Information() {
       <div className="Information-info-header">
         회원 정보 수정
       </div>
-      <div className="Information-info-body">
+      
         <div className="section-title">
           <div className="profile-photo-section">
             <span className="profile-photo-label">
@@ -78,6 +78,14 @@ function Information() {
           <input type="text" id="nickname" />
         </div>
         <div className="input-group">
+          <label htmlFor="phone">새 비밀번호</label>
+          <input type="tel" id="phone" />
+        </div>
+        <div className="input-group">
+          <label htmlFor="phone">새 비밀번호 확인</label>
+          <input type="tel" id="phone" />
+        </div>
+        <div className="input-group">
           <label htmlFor="phone">휴대전화</label>
           <input type="tel" id="phone" />
         </div>
@@ -93,7 +101,7 @@ function Information() {
           <button type="submit" className="submit-button">수정</button>
           <button type="button" className="cancel-button">취소</button>
         </div>
-      </div>
+      
     </div>
   );
 }

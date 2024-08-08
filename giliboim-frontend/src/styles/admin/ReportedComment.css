@@ -1,0 +1,178 @@
+.reported-comment-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 15px;
+    min-height: calc(100vh - 214px);
+    box-sizing: border-box;
+    margin-top: 60px; /* 화면을 아래로 이동 */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comment-section {
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #ccc;
+
+}
+
+/* 작성자와 작성일을 가로로 정렬 */
+.comment-row-horizontal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-right: 80px;
+}
+
+.comment-row-item {
+    
+    flex: 1;
+    margin-right: 100px;
+    height: 30px; /* 세로 길이 줄이기 */
+}
+
+.comment-row-item:last-child {
+    margin-right: 0;
+}
+
+.comment-row-item label {
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.comment-row-item input {
+    width: 100%;
+    max-width: 100px; /* 인풋 박스 크기 조정 */
+    box-sizing: border-box;
+    padding: 5px;
+    height: 30px; /* 세로 길이 줄이기 */
+    margin-left: 15px; /* 인풋 박스를 오른쪽으로 이동 */
+    border-radius: 10px; /* 모서리를 둥글게 설정 */
+    border: 1px solid #ccc; /* 인풋 박스 테두리 추가 */
+}
+
+/* 내용과 신고 내용을 세로로 정렬 */
+.comment-row-vertical,
+.report-row-vertical {
+    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+.comment-row-vertical label,
+.report-row-vertical label {
+    margin-bottom: 5px;
+}
+
+.comment-row-vertical input,
+.report-row-vertical input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 100px; /* 세로 크기 조정 */
+    border-radius: 10px; /* 모서리를 둥글게 설정 */
+    border: 1px solid #ccc; /* 인풋 박스 테두리 추가 */
+}
+
+/* 신고자, 신고일, 신고 분류를 가로로 정렬 */
+.report-row-horizontal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.report-row-item {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.report-row-item:last-child {
+    margin-right: 0;
+}
+
+.report-row-item label {
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+.report-row-item input {
+    width: 100%;
+    max-width: 100px; /* 인풋 박스 크기 조정 */
+    box-sizing: border-box;
+    padding: 5px;
+    margin-left: 15px; /* 인풋 박스를 오른쪽으로 이동 */
+    border-radius: 10px; /* 모서리를 둥글게 설정 */
+    border: 1px solid #ccc; /* 인풋 박스 테두리 추가 */
+}
+
+
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top:80px;
+    width: 30%; /* 버튼의 가로 길이를 30%로 고정 */
+    
+}
+
+.btn:last-child {
+    margin-right: 0;
+}
+
+.btn.blue {
+    background-color: #78a6d8;
+    color: white;
+}
+
+.btn.red {
+    background-color: #e05e6b;
+    color: white;
+}
+
+.btn.gray {
+    background-color: #6c757d;
+    color: white;
+}
+
+@media (max-height: 500px) {
+    .reported-comment-container {
+        padding: 10px;
+    }
+
+    .comment-row-horizontal,
+    .report-row-horizontal {
+        flex-direction: column;
+    }
+
+    .comment-row-item,
+    .report-row-item {
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        width: 100%; /* 작은 화면에서는 버튼을 100%로 */
+        margin-top: 10px;
+        flex: none;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
