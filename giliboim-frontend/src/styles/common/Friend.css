@@ -1,3 +1,4 @@
+/* 공통 스타일 */
 .friend-header-container {
     display: flex;
     justify-content: center;
@@ -7,7 +8,6 @@
     font-weight: bold;
     position: relative;
     /* 버튼을 절대 위치로 배치하기 위해 설정 */
-
 }
 
 .friend-header-title {
@@ -16,7 +16,6 @@
     font-weight: bold;
     text-align: center;
     /* 텍스트를 가운데 정렬 */
-
 }
 
 .friend-container {
@@ -24,17 +23,13 @@
     flex-direction: column;
     min-height: calc(100vh - 220px);
     /* Header와 Footer를 제외한 높이 */
-
     border-top: 1px solid #ddd;
-
-
 }
 
 .profile {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    
 }
 
 .profile-image {
@@ -54,7 +49,8 @@
 
 .friend-list {
     border-top: 1px solid #ddd;
-    margin-top: -5px; /* 선을 위로 10px 이동 */
+    margin-top: -5px;
+    /* 선을 위로 5px 이동 */
 }
 
 .friend-header {
@@ -75,7 +71,6 @@ ul {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-
 }
 
 .friend-image {
@@ -109,12 +104,115 @@ ul {
 .add-friend-button {
     position: absolute;
     right: 20px;
-    background-color: transparent; 
+    background-color: transparent;
     cursor: pointer;
-    border: none; 
-    color: #26b2dd; 
-    font-size: 16px; 
-    padding: 0; 
-    margin-top : 10px;
-   
+    border: none;
+    color: #26b2dd;
+    font-size: 16px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.confirm-button,
+.cancel-button {
+
+    color: white;
+    padding: 10px 40px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: #D9D9D9;
+}
+
+.confirm-button {
+    background-color: #5FA8D3;
+}
+
+.popup-input {
+    margin-top: 20px;
+    padding: 6px;
+
+}
+
+.popup-input1 {
+    margin-top: 20px;
+    padding: 6px;
+
+}
+
+.popup-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.phone-number-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+
+
+}
+
+.country-code {
+    margin-top: 20px;
+    margin-right: 18px;
+    font-size: 15px;
+    color: #333;
+
+}
+
+.popup-subtext {
+
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 20px;
+
+}
+
+.cancel-button1 {
+    background-color: #D9D9D9;
+}
+
+.confirm-button1 {
+    background-color: #5FA8D3;
+}
+
+.confirm-button1,
+.cancel-button1 {
+    display: inline-block;
+    width: 120px;
+    color: white;
+    padding: 10px 0;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
 }

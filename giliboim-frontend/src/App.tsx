@@ -23,9 +23,12 @@ import CustomComplaintPage from "./pages/community/CustomComplaintPage";
 import AskPage from "./pages/community/AskPage";
 import Mypage from "./components/Mypage";
 import InquiryList from "./components/InquiryList";
+import Check from "./components/Check";
+import AdminComments from "./pages/admin/AdminComments";
+import ReportedComment from "./pages/admin/ReportedComment";
 
 
-const App: React.FC = () => {
+function App() {
   return (
     <>
       <div className="app">
@@ -38,31 +41,34 @@ const App: React.FC = () => {
           // <Information/>
           // <Footer/>
           //<LoginPage/>
-        }
+          //<Check />
+        //<AdminComments />
+      }
         <Header />
-        <AskPage />
+        
+      <ReportedComment/>
         <Footer />
         {
           //<TermsOfUse/>
           //<InsertMember/>
         }
       </div>
-      {/* 
-        <div className="App">
-            <Header/>
-            <Routes>
-              <Route path="/" element={<Main />} />
-              <Route path="/Main" element={<Main />} />
-              <Route path="/InquiryList" element={<InquiryList />} />
-              <Route path="/Dangers" element={<Dangers />} /> 
-              <Route path="/Mypage" element={<Mypage />} />
-              <Route path="/settings" element={<Settings />} />
-            </Routes>
-            <Footer />
-        </div>
-      */}
+      {/*
+              <div className="App">
+                  <Header/>
+                  <Routes>
+                    <Route path="/" element={<Main />} />
+                    <Route path="/Main" element={<Main />} />
+                    <Route path="/InquiryList" element={<InquiryList />} />
+                    <Route path="/Dangers" element={<Dangers />} />
+                    <Route path="/Mypage" element={<Mypage />} />
+                    <Route path="/settings" element={<Settings />} />
+                  </Routes>
+                  <Footer />
+              </div>
+            */}
     </>
   );
-};
+}
     
 export default App;
