@@ -22,10 +22,16 @@ import CustomComplaintPage from "./pages/community/CustomComplaintPage";
 import AskPage from "./pages/community/AskPage";
 import Mypage from "./components/Mypage";
 import InquiryList from "./components/InquiryList";
+import SearchId from "./pages/account/SearchId";
+import SearchPwd from "./pages/account/SearchPwd";
+import AdminPost from "./pages/admin/AdminPost";
+import AdminAsk from "./pages/admin/AdminAsk";
+import ReportedPost from "./pages/admin/ReportedPost";
 import CompleteInsert from "./pages/account/CompleteInsert";
 import ChatList from "./components/ChatList";
 import ChatRoom from "./components/ChatRoom";
 import InquiryDetails from "./components/InquiryDetails";
+
         
 import RouteMain from "./pages/route/RouteMain";
 import RouteSelect from "./pages/route/RouteSelect";
@@ -47,8 +53,10 @@ const App: React.FC = () => {
           // <ChatRoom/>
           // <InquiryDetails/>
           // <CompleteInsert/>
+          // <ReportedPost/>
           // <Footer/>
         }
+
         <Header />
         <RouteSelect />
         <Footer />
