@@ -22,6 +22,11 @@ import CustomComplaintPage from "./pages/community/CustomComplaintPage";
 import AskPage from "./pages/community/AskPage";
 import Mypage from "./components/Mypage";
 import InquiryList from "./components/InquiryList";
+import SearchId from "./pages/account/SearchId";
+import SearchPwd from "./pages/account/SearchPwd";
+import AdminPost from "./pages/admin/AdminPost";
+import AdminAsk from "./pages/admin/AdminAsk";
+import ReportedPost from "./pages/admin/ReportedPost";
         
 
 const App: React.FC = () => {
@@ -38,9 +43,10 @@ const App: React.FC = () => {
           // <Footer/>
           //<LoginPage/>
         }
-        <Header />
-        <AskPage />
-        <Footer />
+        <Header/>
+        < ReportedPost />
+        <Footer/>
+
         {
           //<TermsOfUse/>
           //<InsertMember/>
