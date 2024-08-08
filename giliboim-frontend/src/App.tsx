@@ -22,6 +22,9 @@ import CustomComplaintPage from "./pages/community/CustomComplaintPage";
 import AskPage from "./pages/community/AskPage";
 import Mypage from "./components/Mypage";
 import InquiryList from "./components/InquiryList";
+import ChatList from "./components/ChatList";
+import ChatRoom from "./components/ChatRoom";
+import InquiryDetails from "./components/InquiryDetails";
         
 
 const App: React.FC = () => {
@@ -37,9 +40,12 @@ const App: React.FC = () => {
           // <Information/>
           // <Footer/>
           //<LoginPage/>
+        //<AskPage />
+        //<ChatList/>
+        //<ChatRoom/>
         }
         <Header />
-        <AskPage />
+        <InquiryDetails/>
         <Footer />
         {
           //<TermsOfUse/>
