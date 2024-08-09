@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/community/CommunityDetail.css'; // CSS 파일을 분리하여 스타일을 적용합니다.
+import '../../styles/community/CommunityDetail.css'; // CSS 파일을 분리하여 스타일을 적용합니다.
 import KakaoMap from '../../components/KakaoMap';
 
 const Community2: React.FC = () => {
