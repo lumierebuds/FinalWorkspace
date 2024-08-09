@@ -71,8 +71,9 @@ const InsertMember: React.FC = () => {
         alert('인증요청이 처리되었습니다. ');
         
     };
-
-    const handleDuplicateCheck = (name : keyof User) => {
+    
+    //name = id, nickname
+    const handleDuplicateCheck = (keyName : keyof User) => {
         //중복체크
         const fieldValue = form[name];
 
@@ -87,7 +88,7 @@ const InsertMember: React.FC = () => {
                     alert("사용가능합니다.");
                     setCheck({
                         ...check,
-                        [name] : true
+                        [keyName] : true
                     })
                 } else {
                     alert("이미 있습니다.");

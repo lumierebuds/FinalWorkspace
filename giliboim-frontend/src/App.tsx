@@ -37,6 +37,7 @@ import InquiryDetails from "./components/InquiryDetails";
 import Check from "./components/Check";
 import AdminComments from "./pages/admin/AdminComments";
 import ReportedComment from "./pages/admin/ReportedComment";
+import AdminPostList from "./pages/admin/ReportPostList";
 import MemberDetail from "./pages/admin/MemberDetail";
 import AdminAskList from "./pages/admin/AdminAskList";
 import AdminHeader from "./components/AdminHeader";
@@ -53,9 +54,7 @@ function App() {
           // <Header title="메인" showBackButton={false} showCloseButton={false} />
           // <AdminHeader />
           // <Main />
-          // <Friend/>
           // <Settings />
-          // <Community/>
           // <Information/>
           // <AskPage />
           // <ChatList/>
@@ -69,6 +68,9 @@ function App() {
           // <LoginPage/>
           //<ReportedComment/>
           //<RouteSelect />
+
+          //  <Friend/>
+          //<Community/>
           //<MemberDetail/>
         }
         
