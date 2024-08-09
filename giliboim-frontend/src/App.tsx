@@ -1,7 +1,7 @@
 import React from "react";
 import Main from "./components/Main";
 import "./App.css";
-// import Header from "./components/Header";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -17,11 +17,12 @@ import InsertMember from "./pages/account/InsertMember";
 import Withdraw from "./components/Withdraw";
 import Information from "./components/Information";
 import Community from "./pages/community/Community";
+import CommunityDetail from "./pages/community/CommunityDetail";
 import LocationPicker from "./pages/community/LocationPicker";
 import ReportForm from "./pages/community/ReportEditForm";
 import ComplaintPage from "./pages/community/ComplaintPage";
 import CustomComplaintPage from "./pages/community/CustomComplaintPage";
-import AskPage from "./pages/community/AskPage";
+import AskPage from "./components/AskPage";
 import Mypage from "./components/Mypage";
 import InquiryList from "./components/InquiryList";
 import SearchId from "./pages/account/SearchId";
@@ -39,6 +40,8 @@ import ReportedComment from "./pages/admin/ReportedComment";
 import MemberDetail from "./pages/admin/MemberDetail";
 import AdminAskList from "./pages/admin/AdminAskList";
 import AdminHeader from "./components/AdminHeader";
+import ReportCommentList from "./pages/admin/ReportCommentList";
+import CommentList from "./pages/admin/CommentList";
 
 
 function App() {
@@ -48,6 +51,7 @@ function App() {
         {
           //로그인했을때
           // <Header title="메인" showBackButton={false} showCloseButton={false} />
+          // <AdminHeader />
           // <Main />
           // <Friend/>
           // <Settings />
@@ -59,14 +63,17 @@ function App() {
           // <InquiryDetails/>
           // <CompleteInsert/>
           // <ReportedPost/>
+          // <AdminAskList/>
+          // <ReportCommentList />
           // <Footer/>
-          //<LoginPage/>
+          // <LoginPage/>
           //<ReportedComment/>
           //<RouteSelect />
           //<MemberDetail/>
         }
-        <AdminHeader />
-          <AdminAskList/>
+        
+        <Header />
+        <CommunityDetail/>
         <Footer />
         {  
           // 로그인 안했을때
