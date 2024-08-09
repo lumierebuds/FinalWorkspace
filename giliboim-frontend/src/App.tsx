@@ -17,11 +17,12 @@ import InsertMember from "./pages/account/InsertMember";
 import Withdraw from "./components/Withdraw";
 import Information from "./components/Information";
 import Community from "./pages/community/Community";
+import CommunityDetail from "./pages/community/CommunityDetail";
 import LocationPicker from "./pages/community/LocationPicker";
 import ReportForm from "./pages/community/ReportEditForm";
 import ComplaintPage from "./pages/community/ComplaintPage";
 import CustomComplaintPage from "./pages/community/CustomComplaintPage";
-import AskPage from "./pages/community/AskPage";
+import AskPage from "./components/AskPage";
 import Mypage from "./components/Mypage";
 import InquiryList from "./components/InquiryList";
 import SearchId from "./pages/account/SearchId";
@@ -36,6 +37,8 @@ import InquiryDetails from "./components/InquiryDetails";
 import Check from "./components/Check";
 import AdminComments from "./pages/admin/AdminComments";
 import ReportedComment from "./pages/admin/ReportedComment";
+import ReportCommentList from "./pages/admin/ReportCommentList";
+import CommentList from "./pages/admin/CommentList";
 
 
 function App() {
@@ -59,9 +62,10 @@ function App() {
           // <Footer/>
           //<LoginPage/>
           //<ReportedComment/>
+          //<ReportCommentList />
         }
         <Header />
-        <RouteSelect />
+        <CommunityDetail/>
         <Footer />
         {  
           // 로그인 안했을때
