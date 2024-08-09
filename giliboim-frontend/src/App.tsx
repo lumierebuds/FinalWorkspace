@@ -37,6 +37,9 @@ import InquiryDetails from "./components/InquiryDetails";
 import Check from "./components/Check";
 import AdminComments from "./pages/admin/AdminComments";
 import ReportedComment from "./pages/admin/ReportedComment";
+import MemberDetail from "./pages/admin/MemberDetail";
+import AdminAskList from "./pages/admin/AdminAskList";
+import AdminHeader from "./components/AdminHeader";
 import ReportCommentList from "./pages/admin/ReportCommentList";
 import CommentList from "./pages/admin/CommentList";
 
@@ -48,6 +51,7 @@ function App() {
         {
           //로그인했을때
           // <Header title="메인" showBackButton={false} showCloseButton={false} />
+          // <AdminHeader />
           // <Main />
           // <Friend/>
           // <Settings />
@@ -59,11 +63,15 @@ function App() {
           // <InquiryDetails/>
           // <CompleteInsert/>
           // <ReportedPost/>
+          // <AdminAskList/>
+          // <ReportCommentList />
           // <Footer/>
           // <LoginPage/>
           //<ReportedComment/>
-          //<ReportCommentList />
+          //<RouteSelect />
+          //<MemberDetail/>
         }
+        
         <Header />
         <CommunityDetail/>
         <Footer />
@@ -71,7 +79,7 @@ function App() {
           // 로그인 안했을때
           // <LoginPage/>
           // <TermsOfUse/>
-          <InsertMember/>
+          // <InsertMember/>
         }
       </div>
       {/*
