@@ -57,17 +57,17 @@ function App() {
           // <CompleteInsert/>
           // <ReportedPost/>
           // <Footer/>
-          //<LoginPage/>
+          // <LoginPage/>
           //<ReportedComment/>
         }
-        <Header />
+        {/* <Header />
         <RouteSelect />
-        <Footer />
+        <Footer /> */}
         {  
           // 로그인 안했을때
           // <LoginPage/>
           // <TermsOfUse/>
-          // <InsertMember/>
+          <InsertMember/>
         }
       </div>
       {/*
