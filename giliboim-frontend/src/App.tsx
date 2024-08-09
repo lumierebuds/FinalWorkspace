@@ -60,7 +60,7 @@ function App() {
           // <CompleteInsert/>
           // <ReportedPost/>
           // <Footer/>
-          //<LoginPage/>
+          // <LoginPage/>
           //<ReportedComment/>
           //<ReportCommentList />
         }
@@ -71,7 +71,7 @@ function App() {
           // 로그인 안했을때
           // <LoginPage/>
           // <TermsOfUse/>
-          // <InsertMember/>
+          <InsertMember/>
         }
       </div>
       {/*
