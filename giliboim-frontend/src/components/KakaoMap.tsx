@@ -15,7 +15,7 @@ const KakaoMap: React.FC = () => {
       map.setCenter(moveLatLon);
     }
   };
-
+  
   const searchPlace = (place: string) => {
     if ((window as any).kakao && (window as any).kakao.maps) {
       const ps = new (window as any).kakao.maps.services.Places();

@@ -7,10 +7,7 @@ const RouteMain: React.FC = () => {
   const [guide, setGuide] = useState(false);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
-  const handleReplySubmit = () => {
-    setIsPopupVisible(true); // 팝업 보이게 설정
-  };
-
+  
   const handleClosePopup = () => {
     setIsPopupVisible(false); // 팝업 닫기
   };
