@@ -1,0 +1,55 @@
+
+.AdminPostList {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 194px); /* Header와 Footer를 제외한 높이 */
+    padding: 20px;
+  }
+
+  .post-list {
+    flex-grow: 1; /* 남은 공간을 모두 차지하도록 */
+    margin-bottom: 20px;
+    overflow-y: auto; /* 리스트가 많을 때 스크롤 가능하도록 설정 */
+  }
+  
+  .post {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .post-info {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .post-title {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .post-content {
+    font-size: 0.9rem;
+  }
+  
+  .post-image {
+    width: 80px;
+    height: 80px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    margin-right: 10px;
+  }
+  
+  .post-meta {
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+
+  

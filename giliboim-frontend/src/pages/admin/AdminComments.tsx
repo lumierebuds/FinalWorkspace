@@ -3,7 +3,7 @@ import '../../styles/admin/AdminComments.css';
 import declaration from '../../assets/images/declaration.png';
 import normal from '../../assets/images/User.png';
 
-const AdminPost: React.FC = () => {
+const AdminComments: React.FC = () => {
   const [posts, setPosts] = useState([
     { id: 1, type: '신고', name: '회원1', content: '이것은 신고된 댓글입니다.' },
     { id: 2, type: '신고', name: '회원2', content: '신고된 댓글 내용입니다.' },
@@ -90,4 +90,4 @@ const AdminPost: React.FC = () => {
   );
 }
 
-export default AdminPost;
+export default AdminComments;

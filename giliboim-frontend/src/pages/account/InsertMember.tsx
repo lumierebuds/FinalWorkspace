@@ -68,11 +68,13 @@ const InsertMember: React.FC = () => {
         실패시는 알아서
         */
     };
-
-    const handleDuplicateCheck = (name : keyof User) => {
+    
+    //name = id, nickname
+    const handleDuplicateCheck = (keyName : keyof User) => {
         //중복체크
-        const fieldValue = form[name];
-        axios.get("http://localhost:여기 해야댐.",{[name] : fieldValue})
+        const fieldValue = form[keyName];
+        
+        axios.get("http://localhost:여기 해야댐.",{[keyName] : fieldValue})
             .then(response=>{
                 console.log(response.data);
                 //결과값이 없으면 count = 0
@@ -80,7 +82,7 @@ const InsertMember: React.FC = () => {
                     alert("사용가능합니다.");
                     setCheck({
                         ...check,
-                        [name] : true
+                        [keyName] : true
                     })
                 } else {
                     alert("이미 있습니다.");
