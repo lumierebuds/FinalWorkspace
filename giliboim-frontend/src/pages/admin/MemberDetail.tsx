@@ -72,27 +72,15 @@
                 </table>
                 <div className="favorite-buttons">
                     <div className="favorite-button" onClick={() => navigate("/admin/MyPost")}>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 12H21M3 6H21M3 18H21" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
                         작성한 게시글 목록
                     </div>
                     <div className="favorite-button" onClick={() => navigate("/admin/ReportPost")}>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 12H21M3 6H21M3 18H21" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
                         신고한 게시글 목록
                     </div>
                     <div className="favorite-button" onClick={() => navigate("/admin/MemberComments")}>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 12H21M3 6H21M3 18H21" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
                         작성한 댓글 목록
                     </div>
                     <div className="favorite-button" onClick={() => navigate("/admin/ReportComments")}>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 12H21M3 6H21M3 18H21" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
                         신고한 댓글 목록
                     </div>
                 </div>

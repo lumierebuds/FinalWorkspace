@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from 'react';
+import React, { ChangeEvent, FormEvent, useState } from 'react';
 import '../../styles/common/InsertMember.css';
 import logo from '../../assets/images/giliboim-logo.png';
 import axios from 'axios';
@@ -61,20 +61,26 @@ const InsertMember: React.FC = () => {
         });
     };
 
-    const handleSubmit = () => {
-        /*axios실행후 성공시 
+    const handleSubmit = (event:FormEvent) => {
+        event.preventDefault();
+        if(formcheck=="인증요청"){
+            setFormcheck("회원가입");
+            return;
+        }
+
         alert('인증요청이 처리되었습니다. ');
-        setFormcheck("회원가입");
-        실패시는 알아서
-        */
+        
     };
     
     //name = id, nickname
     const handleDuplicateCheck = (keyName : keyof User) => {
         //중복체크
-        const fieldValue = form[keyName];
-        
-        axios.get("http://localhost:여기 해야댐.",{[keyName] : fieldValue})
+        const fieldValue = form[name];
+
+        axios.get("http://localhost:8085/api/Account/insertMemberCheck",{
+            params : {
+                key : name,
+                value1 : fieldValue}})
             .then(response=>{
                 console.log(response.data);
                 //결과값이 없으면 count = 0
@@ -87,6 +93,9 @@ const InsertMember: React.FC = () => {
                 } else {
                     alert("이미 있습니다.");
                 }
+            })
+            .catch(error=>{
+                console.log(error);
             })
     };
 
@@ -104,7 +113,7 @@ const InsertMember: React.FC = () => {
                         onChange={handleChange}
                         required
                     />
-                    <button onClick={() => handleDuplicateCheck('id')}>중복확인</button>
+                    <button type='button' onClick={() => handleDuplicateCheck('id')}>중복확인</button>
                 </div>
 
                 <div className="input-group">
@@ -116,7 +125,7 @@ const InsertMember: React.FC = () => {
                         onChange={handleChange}
                         required
                     />
-                    <button onClick={() => handleDuplicateCheck('nickname')}>중복확인</button>
+                    <button type='button' onClick={() => handleDuplicateCheck('nickname')}>중복확인</button>
                 </div>
 
                 <input

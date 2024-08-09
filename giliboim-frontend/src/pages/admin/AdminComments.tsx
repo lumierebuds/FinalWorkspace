@@ -13,7 +13,7 @@ const AdminComments: React.FC = () => {
     { id: 6, type: '신고', name: '회원6', content: '신고된 댓글입니다.' },
     { id: 7, type: '일반', name: '회원7', content: '일반 댓글입니다.' },
     { id: 8, type: '신고', name: '회원8', content: '신고된 댓글입니다.' },
-  ]);
+  ]); 
 
   const [filter, setFilter] = useState('전체');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
