@@ -1,7 +1,7 @@
 import React from "react";
 import Main from "./components/Main";
 import "./App.css";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -36,6 +36,9 @@ import InquiryDetails from "./components/InquiryDetails";
 import Check from "./components/Check";
 import AdminComments from "./pages/admin/AdminComments";
 import ReportedComment from "./pages/admin/ReportedComment";
+import MemberDetail from "./pages/admin/MemberDetail";
+import AdminAskList from "./pages/admin/AdminAskList";
+import AdminHeader from "./components/AdminHeader";
 
 
 function App() {
@@ -59,9 +62,11 @@ function App() {
           // <Footer/>
           //<LoginPage/>
           //<ReportedComment/>
+          //<RouteSelect />
+          //<MemberDetail/>
         }
-        <Header />
-        <RouteSelect />
+        <AdminHeader />
+          <AdminAskList/>
         <Footer />
         {  
           // 로그인 안했을때

@@ -1,0 +1,86 @@
+.admin-ask-list-container {
+    height: calc(100vh - 100px); /* 헤더와 푸터를 제외한 높이 */
+    overflow-y: auto; /* 세로 스크롤 활성화 */
+    background-color: #ffffff; /* 배경을 흰색으로 설정 */
+    margin: 0 auto; /* 가운데 정렬 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 약간의 그림자 효과 */
+    border-radius: 8px; /* 둥근 테두리 */
+    height: calc(100vh - 154px);
+  }
+  
+  .ask-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ask-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: #ffffff; /* 항목의 배경색도 흰색으로 설정 */
+    min-height: 50px; /* 항목의 최소 높이 설정 */
+  }
+  
+  /* 빈 항목에 대한 스타일 */
+  .ask-item.empty {
+    justify-content: center; /* 텍스트를 가운데 정렬 */
+    color: #999999; /* 빈 항목 텍스트 색상 */
+    font-style: italic; /* 텍스트 기울이기 */
+  }
+  
+  .ask-item .checkbox,
+  .ask-item .delete-button {
+    flex-shrink: 0; /* 크기 축소 방지 */
+  }
+  
+  .ask-item .checkbox svg,
+  .ask-item .delete-button svg {
+    width: 20px; /* 크기 조정 */
+    height: 20px;
+  }
+  
+  .ask-item .delete-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .ask-item .delete-button svg {
+    display: block;
+  }
+  
+  .ask-item span {
+    flex-grow: 1;
+    margin-left: 10px;
+    color: #1e1e1e;
+  }
+  
+  /* 모바일용 미디어 쿼리 */
+  @media (max-width: 768px) {
+    .admin-ask-list-container {
+      height: calc(100vh - 120px); /* 모바일 환경에 맞춘 높이 조정 */
+      margin: 10px; /* 모바일 화면 여백 조정 */
+    }
+  
+    .ask-item {
+      padding: 8px;
+      min-height: 40px; /* 항목의 최소 높이 축소 */
+    }
+  
+    .ask-item span {
+      font-size: 14px; /* 모바일에서 글자 크기 조정 */
+      margin-left: 8px;
+    }
+  
+    .ask-item .checkbox svg,
+    .ask-item .delete-button svg {
+      width: 18px; /* SVG 아이콘 크기 조정 */
+      height: 18px;
+    }
+  }
+  
